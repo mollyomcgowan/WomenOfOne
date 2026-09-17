@@ -1,0 +1,1 @@
+This is a preliminary basic template for future content. I've used the styling and code from a former colleague's personal website, which is open source and available under the MIT License. His name is Jason Cashdollar and that website is https://github.com/cshdllr/jasoncashdollar/tree/main.
