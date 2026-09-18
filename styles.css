@@ -849,6 +849,8 @@ p a {
   }
 
   /* More breathing room between stacked projects (kept on the 4px grid) */
-  .projects {
+   .projects {
     gap: var(--space-5);
   }
+  }
+  
