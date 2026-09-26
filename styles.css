@@ -497,7 +497,7 @@ p a {
 }
 
 .project-header {
-  margin: 0 0 var(--space-8);
+  margin: 0 0 var(--space-6);
 }
 
 .project-header .page-title {
@@ -505,7 +505,7 @@ p a {
 }
 
 .project-section {
-  margin-bottom: var(--space-12);
+  margin-bottom: var(--space-10);
 }
 
 .section-header {
