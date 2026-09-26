@@ -22,8 +22,8 @@ const BREADCRUMB_MENU_SECTIONS = [
     {
         label: 'Games',
         items: [
-            { slug: 'siboshooter', label: 'Sibo Shooter' },
-            { slug: 'periods', label: 'PERIODS' },
+            { slug: 'siboshooter', label: 'sibo shooter', url: 'https://womenof1.substack.com/p/sibo-shooter-v1' },
+            { slug: 'PERIODS', label: 'PERIODS' },
         ]
     },
 ];
@@ -79,7 +79,13 @@ function initBreadcrumbMenu() {
         section.items.forEach(item => {
             const link = document.createElement('a');
             link.className = 'breadcrumb-menu-item';
-            link.href = isFile ? item.slug + '.html' : item.slug;
+            if (item.url) {
+                link.href = item.url;
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+            } else {
+                link.href = isFile ? item.slug + '.html' : '/' + item.slug;
+                }
             link.textContent = item.label;
             link.setAttribute('role', 'menuitem');
             if (item.slug === currentSlug) {
