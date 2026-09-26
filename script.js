@@ -15,8 +15,8 @@ const BREADCRUMB_MENU_SECTIONS = [
     {
         label: 'Tools',
         items: [
-            { slug: 'symptom-tracking-v1', label: 'Symptom Tracking V1' },
             { slug: 'p-tracker', label: 'P tracker' },
+            { slug: 'symptom-tracking-v1', label: 'Symptom Tracking V1' },
         ]
     },
     {
