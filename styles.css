@@ -410,6 +410,11 @@ p a {
   margin: 0;
 }
 
+/* Intro Section */
+.intro {
+  margin-bottom: var(--space-15);
+}
+
 /* Projects Section */
 .projects {
   display: flex;
