@@ -707,7 +707,8 @@ p a {
   display: grid;
   grid-template-columns: var(--home-primary-column) 1fr;
   column-gap: var(--home-column-gap);
-  align-items: left;
+  align-items: start;
+  text-align: left;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -728,7 +729,7 @@ p a {
 
 .work-primary {
   display: flex;
-  align-items: left;
+  align-items: start;
   gap: var(--space-2);
 }
 
