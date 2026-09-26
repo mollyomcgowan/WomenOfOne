@@ -716,7 +716,7 @@ p a {
 
 .work-primary {
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: var(--space-2);
 }
 
