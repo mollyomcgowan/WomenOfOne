@@ -554,6 +554,11 @@ p a {
   object-position: center;
   border-radius: var(--border-radius-large);
 }
+.project-video-small {
+  width: auto;
+  max-width: 100%;
+  max-height: 520px;
+}
 
 .project-image-centered {
   display: flex;
