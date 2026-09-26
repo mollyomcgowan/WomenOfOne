@@ -526,7 +526,7 @@ p a {
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight-regular);
   line-height: 1.6;
-  margin: var(--space-8) 0;
+  margin: 0 0 var(--space-8) 0;
   padding-left: var(--space-6);
 }
 
