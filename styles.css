@@ -560,6 +560,11 @@ p a {
   max-height: 520px;
 }
 
+.video-spaced {
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-6);
+}
+
 .project-image-centered {
   display: flex;
   flex-direction: column;
