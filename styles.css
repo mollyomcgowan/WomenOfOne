@@ -630,6 +630,15 @@ p a {
   padding-top: var(--space-2);
 }
 
+.project-figure {
+  margin: 0 0 var(--space-6);   /* space below the caption: 24px */
+}
+
+/* shrink the gap between a paragraph and an image that follows it */
+.section-text:has(+ .project-figure) {
+  margin-bottom: var(--space-4); /* 16px */
+}
+
 /* Button-style link for project pages */
 .link-button {
   display: inline-block;
