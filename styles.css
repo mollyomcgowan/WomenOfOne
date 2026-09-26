@@ -132,8 +132,10 @@ a:focus {
 
 p a {
   font-weight: var(--font-weight-medium);
-  text-decoration: none;
+  text-decoration: underline;
   color: var(--color-text-primary);
+  text-decoration-thickness: 1px;
+  text-underline-offset: var(--space-1);
 }
 
 /* Container */
