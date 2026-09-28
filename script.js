@@ -166,12 +166,31 @@ function initWorkHistory() {
         });
     });
 }
+    function initVideos() {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    document.querySelectorAll('.video-container').forEach(container => {
+        const video = container.querySelector('video');
+        const button = container.querySelector('[data-video-toggle]');
+        if (!video) return;
+
+        const sync = () => { if (button) button.textContent = video.paused ? 'Play' : 'Pause'; };
+        video.addEventListener('play', sync);
+        video.addEventListener('pause', sync);
+
+        if (!reduceMotion) video.play().catch(() => {}); // browser may refuse; poster stays visible
+        sync();
+
+        if (button) button.addEventListener('click', () => video.paused ? video.play() : video.pause());
+        });
+            }
 
 // Portfolio JavaScript
 document.addEventListener('DOMContentLoaded', function() {
     initBreadcrumbNameThumb();
     initBreadcrumbMenu();
     initWorkHistory();
+    initVideos();
 
     // Smooth scrolling for internal links
     const internalLinks = document.querySelectorAll('a[href^="#"]');
