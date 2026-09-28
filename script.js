@@ -35,7 +35,7 @@ function initBreadcrumbNameThumb() {
     nameLink.textContent = '';
     const thumb = document.createElement('img');
     thumb.className = 'breadcrumb-name-thumb';
-    thumb.src = 'images/trees.png';
+    thumb.src = 'images/wofone.png';
     thumb.alt = text;
     const label = document.createElement('span');
     label.className = 'breadcrumb-name-text';
