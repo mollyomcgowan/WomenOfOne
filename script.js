@@ -22,7 +22,7 @@ const BREADCRUMB_MENU_SECTIONS = [
     {
         label: 'Games',
         items: [
-            { slug: 'siboshooter', label: 'sibo shooter', url: 'https://womenof1.substack.com/p/sibo-shooter-v1' },
+            { slug: 'siboshooter', label: 'sibo shooter', url: 'siboshooter' },
             { slug: 'PERIODS', label: 'PERIODS' },
         ]
     },
