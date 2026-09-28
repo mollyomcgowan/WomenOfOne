@@ -22,7 +22,7 @@ const BREADCRUMB_MENU_SECTIONS = [
     {
         label: 'Games',
         items: [
-            { slug: 'siboshooter', label: 'sibo shooter', url: 'siboshooter' },
+            { slug: 'siboshooter', label: 'sibo shooter' },
             { slug: 'PERIODS', label: 'PERIODS' },
         ]
     },
